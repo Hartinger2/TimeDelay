@@ -12,6 +12,7 @@
 #include "driver/gpio.h"
 #include "sdkconfig.h"
 #include "StandardLib.h"
+#include "BasicLib.h"
 
 #define LOG_LOCAL_LEVEL ESP_LOG_INFO
 #include "esp_log.h"
@@ -47,6 +48,8 @@ extern "C" void app_main(void)
 
     TON TON1;
     TON1.PT = 1000;
+
+    TOGGLE TOGGLE1;
 
     while (true) // Endlos-Schleife
     {
